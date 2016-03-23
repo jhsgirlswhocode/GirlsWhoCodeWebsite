@@ -1,9 +1,87 @@
-<!doctype html>
 
 <html>
+<head>
+<title> Girls Who Code Feminism  </title>
+<link rel="stylesheet" type="text/css" href="homepagestyle.css">
+
+</head>
+
+<div>
+
+
 <body>
-    <p>
-        The main page for the Girls Who Code website!
-    </p>
+	 
+	<h1> Juanita High School: Feminism 
+	</h1>
+	<p> Seeking gender equality since 2016 
+	</p>
+<ul>
+  <li><a class="active" href="#home">About US</a></li>
+  <li><a href="#news"> The History of Feminism</a></li>
+  <li><a href="#contact">Games and Quizzes</a></li>
+  <li><a href="#about"> Feminism Today </a></li>
+  <li><a href="aboutus"> Feminism Club Past Projects</a></li>
+  <li><a href="opportunites"> Opportunities</a></li> 
+</ul>
+<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "Canada.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "Japan.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "Monaco.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "Austria.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "France.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "Iceland.jpg"
+slideimages[6] = new Image()
+slideimages[6].src = "Costa.jpg"
+slideimages[7] = new Image()
+slideimages[7].src = "England.jpg"
+slideimages[8] = new Image()
+slideimages[8].src = "germany.jpg"
+slideimages[9] = new Image()
+slideimages[9].src = "Netherlands.jpg"
+</script>
+</head>
+<body>
+<div class="image">
+	<center>
+		<img src="Canada.jpg" id="slide" width="1200" height="700" />
+		<h2><span> <br>Feminism</br>is <br>the advocacy of women's rights on the grounds of</br> political, social, and economic equality to men.</span></h2>
+	</center>
+</div>
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<9)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",5000)
+}
+
+slideit()
+
+</script>
+
 </body>
+
+
+
+
+
 </html>
