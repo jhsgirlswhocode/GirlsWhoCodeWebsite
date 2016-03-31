@@ -4,15 +4,16 @@ body {
 	  ;
 }
 h1 {
-	text-align: center
-    te
-	;
+	text-align: center;
+    color: #a4a4c1;
+    
+	
 }
-p {
+p {font-family: "Courier";
 	text-align: center ;
 }
 h1 {text-align: center;
-    font-family: "Courier New";}
+    font-family: "Courier";}
 ul {
     list-style-type: none;
     margin: 0;
@@ -29,19 +30,19 @@ li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 50px;
+    padding: 15px px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: black;
 }
 .image { position: relative;
         width: 100%;
             }
 h2 {
     position: absolute;
-    top: 200px;
+    bottom: 50px;
     left: 0;
     width: 100%;    
 
@@ -54,6 +55,8 @@ h2 span {
    background: rgba(0, 0, 0, 0.7);
    padding: 10px; 
 }
-
+.info{
+  font-family: "Courier";
+}
 
 
